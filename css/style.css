@@ -1,21 +1,36 @@
 html{
-    background: #00ff00;
+    background: #1acc20;
+    font-family: "Comic Sans MS", sans-serif;
+	padding: 10px;
+}
+
+.tomenu{
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+
+.menu{
+    font-size: 50px;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 
-.menu{
-    font-family: "Comic Sans MS", sans-serif;
-    font-size: 50px;
-    margin: auto;
-    width: 40%;
-}
-
 .menu a{
-    display: block;
+	text-align: center;
     vertical-align: middle;
+    margin: auto;
+	text-decoration: none;
 }
 
 .menu a:hover{
     color: pink;
+}
+
+.text{
+	margin: auto;
+	padding: 50px;
+	width: 60%;
+	background-color: rgba(215,215,215,0.6);
 }
