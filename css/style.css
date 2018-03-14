@@ -1,0 +1,21 @@
+html{
+    background: #00ff00;
+    margin: auto;
+    text-align: center;
+}
+
+.menu{
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 50px;
+    margin: auto;
+    width: 40%;
+}
+
+.menu a{
+    display: block;
+    vertical-align: middle;
+}
+
+.menu a:hover{
+    color: pink;
+}
