@@ -28,9 +28,28 @@ html{
     color: pink;
 }
 
+.textbox{
+	display: none;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(50,50,50,0.5);
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
 .text{
 	margin: auto;
 	padding: 50px;
 	width: 60%;
-	background-color: rgba(215,215,215,0.6);
+	background-color: rgba(215,215,215,0.8);
+	animation-name: vanish_in;
+    animation-duration: 1.1s;
 }
+
+@keyframes vanish_in{
+    from {opacity: 0}
+    to {opacity: 1}
+} 
