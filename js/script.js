@@ -8,6 +8,7 @@ function start(){
     }
 }
 
+/*muestra la sección del parámetro page y oculta el resto*/
 function show(page){
 	var container = document.getElementById("container");
     if (container.childNodes.length==0){
@@ -16,6 +17,23 @@ function show(page){
 	else{
 		container.replaceChild(view[page], container.childNodes[0]); 
 	}
+}
+
+/*superpone la sección del parámetro page sobre la actual*/
+function overlap(page){
+	var container = document.getElementById("container");
+	container.appendChild(view[page]);
+	view[page].style.display = "block";
+}
+
+/* 
+** oculta la sección actual
+** usar solo en secciones superpuestas (con la función overlap)
+*/
+function close_text(page){
+	view[page].style.display = "none";
+	var container = document.getElementById("container");
+	container.removeChild(view[page]);
 }
 
 window.onload = function(){
