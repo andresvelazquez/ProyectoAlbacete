@@ -1,7 +1,30 @@
+@font-face {
+    font-family: "CFRevolution";
+    src: url(./Fonts/CFRevolution.ttf);
+}
+@font-face {
+    font-family:"MKtitle";
+    src: url(./Fonts/MKtitle.ttf);
+    font-weight: bolder;
+}
 html{
+    font-family: "Comic Sans MS";
     background: #1acc20;
-    font-family: "Comic Sans MS", sans-serif;
-	padding: 10px;
+  	padding: 10px;
+}
+h1 {
+   font-family:"CFRevolution";
+   /* font-weight: lighter; */
+   background: linear-gradient(#7D0900, red, #F5AB00,#FFEA3B );
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 0.2px;
+   -webkit-text-stroke-color: black;
+   -webkit-background-clip: text;
+
+
+
+
+
 }
 
 .tomenu{
@@ -11,6 +34,8 @@ html{
 }
 
 .menu{
+    font-family: "CFRevolution";
+    font-weight: 100;
     font-size: 50px;
     width: 100%;
     margin: auto;
@@ -18,14 +43,28 @@ html{
 }
 
 .menu a{
-	text-align: center;
+    color: grey;
+	  text-align: center;
     vertical-align: middle;
     margin: auto;
-	text-decoration: none;
+	  text-decoration: none;
+    text-shadow: 3px 3px #2A4073;
+    color: transparent;
+
+    /* -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black; */
+    -webkit-background-clip: text;
+    -webkit-transition: text-shadow 0.3s, color .7s; /* Para que haya transición cuando pasemos el ratón */
+    transition: text-shadow 0.3s, color .7s;;
+
+
 }
 
-.menu a:hover{
-    color: pink;
+.tomenu, .menu a:hover{
+    text-shadow: 0px 0px;
+    color: DF5F00;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .text{
