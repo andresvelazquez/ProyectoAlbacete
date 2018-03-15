@@ -9,7 +9,10 @@
 }
 html{
     font-family: "Comic Sans MS";
-    background: #1acc20;
+    background: url("../img/1.gif") no-repeat;
+    background-color: black;
+    background-position: relative;
+    background-size:cover;
   	padding: 10px;
 }
 h1 {
