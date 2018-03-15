@@ -65,7 +65,7 @@ h1 {
 
 .tomenu, .menu a:hover{
     text-shadow: 0px 0px;
-    color: DF5F00;
+    color: #DF5F00;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
 }
