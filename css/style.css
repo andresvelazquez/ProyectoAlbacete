@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "CFRevolution";
+    src: url(./Fonts/CFRevolution.ttf);
+}
+@font-face {
+    font-family:"MKtitle";
+    src: url(./Fonts/MKtitle.ttf);
+    font-weight: bolder;
+}
+html{
+    font-family: "Comic Sans MS";
+    background: url("../img/1.gif") no-repeat;
+    background-color: black;
+    background-position: relative;
+    background-size:cover;
+  	padding: 10px;
+}
+h1 {
+   font-family:"CFRevolution";
+   /* font-weight: lighter; */
+   background: linear-gradient(#7D0900, red, #F5AB00,#FFEA3B );
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 0.2px;
+   -webkit-text-stroke-color: black;
+   -webkit-background-clip: text;
+
+}
+
+.tomenu a{
+    display: block;
+	float: left;
+	text-decoration: none;
+}
+
+
+.menu{
+    font-family: "CFRevolution";
+    font-weight: 100;
+    font-size: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.menu a{
+    color: grey;
+	  text-align: center;
+    vertical-align: middle;
+    margin: auto;
+	  text-decoration: none;
+    text-shadow: 3px 3px #2A4073;
+    color: transparent;
+
+    /* -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black; */
+    -webkit-background-clip: text;
+    -webkit-transition: text-shadow 0.3s, color .7s; /* Para que haya transición cuando pasemos el ratón */
+    transition: text-shadow 0.3s, color .7s;;
+
+
+}
+
+.tomenu, .menu a:hover{
+    text-shadow: 0px 0px;
+    color: #DF5F00;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.textbox{
+	display: none;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(50,50,50,0.5);
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.text{
+	margin: auto;
+	padding: 50px;
+	width: 60%;
+	background-color: rgba(215,215,215,0.8);
+	animation-name: vanish_in;
+    animation-duration: 1.1s;
+    overflow: auto;
+    border-radius: 20% 0% 20% 0%;
+    border-style: solid;
+    border-width: 1px;
+    border-left-color: red;
+    border-top-color: red;
+    box-shadow: inset 3px 3px 4px #000000, 
+                3px 3px 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+@keyframes vanish_in{
+    from {opacity: 0}
+    to {opacity: 1}
+} 
